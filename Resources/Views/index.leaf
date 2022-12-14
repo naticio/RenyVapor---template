@@ -1,12 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
 
-  <title>#(title)</title>
-</head>
+#extend("base"):
+  #export("content"):
+  <img src="/Images/logo.png" class="mx-auto d-block" alt="">
+    <h1>ACRONYMS</h1>
 
-<body>
-  <h1>#(title)</h1>
-</body>
-</html>
+    #extend("acronymsTable")
+  #endexport
+#endextend
+
+
